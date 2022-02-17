@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2022-01-29
+	- Allow early access to Teleporter and Portal Gun  
+		(specifcally revert any changes space-exploration-postprocess made to these techs.)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2022-01-28
+	- Initial Release
