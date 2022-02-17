@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2022-01-29
+	- Make Space Exploration optional
+	- Make Krastorio 2 optional
+	- Add settings.
+	- Add Landfill with sand+water recipe when K2 is not installed.
+	- Re-add hydrogen atmospheric condensation recipe.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2022-01-29
 	- Allow early access to Teleporter and Portal Gun  

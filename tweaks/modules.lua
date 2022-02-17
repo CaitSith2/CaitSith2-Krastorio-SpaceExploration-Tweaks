@@ -1,5 +1,3 @@
-local data_util = require("__space-exploration-postprocess__/data_util")
-
 local function craft_time(tier)
   return 1.6^tier
 end
@@ -15,7 +13,22 @@ end
 for _, base_name in pairs({"productivity-module", "speed-module", "effectivity-module"}) do
   for tier = 1, 9 do
     local name = module_name(base_name, tier)
-	data.raw.recipe[name].result_count = 3
-	data_util.set_craft_time(name, craft_time(tier))
+	local recipe = data.raw.recipe[name]
+	if recipe then
+		if settings.startup["cs2-tweaks-more-modules"].value == true then
+			recipe.result_count = 3
+		end
+		if settings.startup["cs2-tweaks-faster-modules"].value == true then
+			if recipe.energy_required then
+				recipe.energy_required = craft_time(tier)
+			end
+			if recipe.normal then
+				recipe.normal.energy_required = craft_time(tier)
+			end
+			if recipe.expensive then
+				recipe.expensive.energy_required = craft_time(tier)
+			end
+		end
+	end
   end
 end

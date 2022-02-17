@@ -1,6 +1,6 @@
 {
   "name": "CaitSith2-Krastorio-SpaceExploration-Tweaks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "factorio_version": "1.1",
   "title": "CaitSith2's Krastorio and Space Exploration Tweaks",
   "author": "CaitSith2",
@@ -8,9 +8,9 @@
   "homepage": "",
   "description": "Krastorio and Space Exploration Tweaks for CaitSith2's game. Use at your own risk.",
   "dependencies": [
-	"space-exploration",
-	"space-exploration-postprocess",
-	"Krastorio2", 
+	"? space-exploration",
+	"? space-exploration-postprocess",
+	"? Krastorio2", 
 	"? walkable-beacons"
   ]
 }
