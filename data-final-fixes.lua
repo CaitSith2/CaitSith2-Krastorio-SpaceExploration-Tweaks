@@ -1,0 +1,5 @@
+require("tweaks/beacons")
+require("tweaks/tiles")
+require("tweaks/intermediates")
+require("tweaks/modules")
+require("tweaks/tiles")
