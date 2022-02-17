@@ -1,6 +1,6 @@
 {
   "name": "CaitSith2-Krastorio-SpaceExploration-Tweaks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "factorio_version": "1.1",
   "title": "CaitSith2's Krastorio and Space Exploration Tweaks",
   "author": "CaitSith2",
@@ -11,6 +11,7 @@
 	"? space-exploration",
 	"? space-exploration-postprocess",
 	"? Krastorio2", 
-	"? walkable-beacons"
+	"? walkable-beacons",
+	"? Transport_Drones"
   ]
 }

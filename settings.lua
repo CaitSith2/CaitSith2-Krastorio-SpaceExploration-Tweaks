@@ -97,3 +97,23 @@ else
 		}
 	})
 end
+if mods["Mining_Drones"] then
+	data:extend({
+		{
+			type = "bool-setting",
+			name = "cs2-tweaks-allow-mining-drone-in-space",
+			setting_type = "startup",
+			default_value = true
+		}
+	})
+end
+if mods["Transport_Drones"] then
+	data:extend({
+		{
+			type = "bool-setting",
+			name = "cs2-tweaks-allow-roads-on-empty-space",
+			setting_type = "startup",
+			default_value = true
+		}
+	})
+end

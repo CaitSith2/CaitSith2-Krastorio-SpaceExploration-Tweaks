@@ -8,6 +8,7 @@ if settings.startup["cs2-tweaks-beacons"].value == true then
 	  module_slots = 15,
 	  module_info_icon_scale = 0.35
 	}
+	
 
 	if mods["Krastorio2"] then
 		data.raw.beacon["kr-singularity-beacon"].energy_usage = "2000kW"
@@ -23,6 +24,11 @@ if settings.startup["cs2-tweaks-beacons"].value == true then
 	end
 
 	if mods["space-exploration"] then
+		--local data_util = require("__space-exploration-postprocess__/data_util")
+		--data.raw.beacon["beacon"].
+		collision_mask_util_extended.remove_layer(data.raw["beacon"]["beacon"].collision_mask, space_collision_layer)
+		collision_mask_util_extended.remove_layer(data.raw["beacon"]["beacon"].collision_mask, spaceship_collision_layer)
+		
 		data.raw.beacon["se-wide-beacon"].energy_usage = "2000kW"
 		data.raw.beacon["se-wide-beacon"].module_specification = {
 		  module_info_icon_shift = { 0, 0.5 },
