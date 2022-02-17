@@ -96,6 +96,7 @@ else
 			default_value = true
 		}
 	})
+	
 end
 if mods["Mining_Drones"] then
 	data:extend({
@@ -112,6 +113,16 @@ if mods["Transport_Drones"] then
 		{
 			type = "bool-setting",
 			name = "cs2-tweaks-allow-roads-on-empty-space",
+			setting_type = "startup",
+			default_value = true
+		}
+	})
+end
+if mods["Factorissimo2"] or mods["space-factorissimo-updated"] then
+	data:extend({
+		{
+			type = "bool-setting",
+			name = "cs2-tweaks-allow-factory-buildings-on-spaceship",
 			setting_type = "startup",
 			default_value = true
 		}

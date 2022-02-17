@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2022-01-30as
+	- Allow Space factory buildings on Spaceship
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2022-01-30
 	- Beacons can now be placed in space. No more need to use Beacons but Better + transport drone roads to work around the placement issue.
